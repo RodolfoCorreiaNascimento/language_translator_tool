@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tradutor</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="form">
+      <h1>Tradutor</h1>
+      <label for="text">Texto:</label>
+      <textarea id="text" rows="4"></textarea>
+      <label for="languages-select">Idioma:</label>
+      <select id="languages-select">
+        <option value="en">Inglês</option>
+        <option value="fr">Francês</option>
+        <option value="es">Espanhol</option>
+        <option value="de">Alemão</option>
+        <option value="it">Italiano</option>
+      </select>
+      <button id="translate-btn">Traduzir</button>
+      <div id="result"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="MainApi.js"></script>
+  </body>
+</html>
